@@ -1,0 +1,29 @@
+.card-header{
+    background-color:transparent;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    border:none;
+    gap:50px;
+}
+
+.btn{
+    background-color:transparent;
+    color:var(--primClr);
+}
+.btn:hover{
+   background-color:var(--primClr);
+   color:#FFF;
+
+}
+
+.nav-link{
+    text-transform:uppercase;
+    color:rgb(90, 87, 87);
+    font-weight:bolder;
+}
+.nav-link:hover{
+    background-color:var(--primClr);
+    color:#FFF;
+
+}
