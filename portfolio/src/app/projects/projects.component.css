@@ -1,0 +1,28 @@
+.outer-container{
+    margin:0 auto;
+    width:100%;
+    min-height:100vh;
+}
+.project-container{
+    margin:0 auto;
+
+}
+
+
+/* [class^='imghvr-'],
+[class*=' imghvr-'] {
+  background-color: #D14233;
+} */
+figcaption{
+    background-color:var(--primClr);
+}
+.card{
+    background-color:var(--primClr);
+}
+figcaption a{
+    color:#FFF;
+    font-size:40px;
+    position:absolute;
+    top:80%;
+    transform:translateY(-100%);
+}

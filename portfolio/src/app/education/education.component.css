@@ -1,25 +1,25 @@
 .outer-container{
 
     width:100%;
-    height:100vh;
+    min-height:100vh;
 }
 .left-section{
     background-color:var(--primClr);
-    height:100vh;
+    min-height:100vh;
 }
 .left-section>.img-container{
     position:absolute;
     left:50%;
     height:350px;
     width:350px;
-    background-color:white;
+    background-color:var(--primClr);
     top:50%;
-    transform:translate(0%, -50%);
+    transform:translate(-50%, -50%);
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    border:15px solid var(--primClr);
+    /* border:15px solid #FFF; */
     z-index:10;
     
     }
@@ -27,9 +27,9 @@
     .left-section>.img-container>.img-wrapper{
         height:80%;
         width:80%;
-        background-color:var(--primClr);
+        background-color:#FFF;
         border-radius:50%;
-        padding:20px;
+        padding:15px;
     
     }
     
@@ -42,6 +42,52 @@ transform:translateX(-50%);
 }
 
 .right-section{
-    height:100vh;
+   min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    /* justify-content:space-around; */
+    padding:30px;
+    gap:20px;
 }
 
+.right-section .card{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+.right-section .card .card-el{
+   
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    content:'';
+    position:absolute;
+    top:-100px;
+    height:100px;
+    width:100%;
+    background:var(--primClr);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFF;
+
+}
+.right-section .card .card-ele{
+    /* content:''; */
+    position:absolute;
+    height:100px;
+    width:100px;
+    background-color:var(--primClr);
+    top:-180px;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:30px;
+    color:#FFF;
+
+
+}

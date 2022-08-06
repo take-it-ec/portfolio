@@ -7,6 +7,8 @@ import { FirstsectionComponent } from './firstsection/firstsection.component';
 import { CollectiveComponent } from './collective/collective.component';
 import { NavComponent } from './nav/nav.component';
 import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { EducationComponent } from './education/education.component';
     FirstsectionComponent,
     CollectiveComponent,
     NavComponent,
-    EducationComponent
+    EducationComponent,
+    SkillsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

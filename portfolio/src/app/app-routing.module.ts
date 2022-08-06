@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path:'education',
-    // component:EducationComponent
+    component:EducationComponent
   }
 ];
 

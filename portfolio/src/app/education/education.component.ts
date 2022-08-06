@@ -1,52 +1,63 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Educational } from '../educational.interface';
 
-// @Component({
-//   selector: 'app-education',
-//   templateUrl: './education.component.html',
-//   styleUrls: ['./education.component.css'],
-//   template:'',
-// })
-interface EDUCATION{
+@Component({
+  selector: 'app-education',
+  templateUrl: './education.component.html',
+  styleUrls: ['./education.component.css'],
+  template:'',
+})
 
-  standard:string,
-  institution:string,
-  course:string,
-  marks:string
+
+export class EducationComponent implements OnInit {
+eduImgEnlarged:string='assets/img/college.jpg'
+edu:Educational[]=[
+{
+  standard:'Engineering',
+  institution:'TKM College Of Engineering',
+  course:'Electronics and Communication Engineering',
+  marks:'9.85',
+  icons:'fa-solid fa-graduation-cap',
+  year:'2023',
+  img:'assets/img/college.jpg'
+},
+{
+  standard:'XII',
+  institution:'Mar Baselios Senior Secondary School',
+  course:'Biomaths',
+  marks:'93',
+  icons:'fa-solid fa-school',
+  year:'2018',
+  img:'assets/img/school.jpeg'
+
+
+
+},
+{
+  standard:'X',
+  institution:'Mar Baselios Senior Secondary School',
+  course:'Science',
+  marks:'95',
+  icons:'fa-solid fa-school',
+  year:'2016',
+  img:'assets/img/school2.jpeg'
+
+
+
 }
-@Injectable()
-export abstract class EducationComponent implements OnInit {
-
-education:EDUCATION[]=[
-  {
-    standard:'Engineering',
-    institution:'TKM College Of Engineering',
-    course:'Electronics and Communication Engineering',
-    marks:'9.85'
-
-  },
-  {
-    standard:'XII',
-    institution:'Mar Baselios Senior Secondary School',
-    course:'BioMaths',
-    marks:'93%'
-
-  },
-  {
-    standard:'X',
-    institution:'Mar Baselios Senior Secondary School',
-    course:'Science',
-    marks:'95%'
-
-  }
- 
-
 ]
 
+eduImgEnlarger(e:any){
+this.eduImgEnlarged=e.img
+}
+
   constructor() {
-   
+    
+
    }
 
   ngOnInit(): void {
+    
   }
 
 }

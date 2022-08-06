@@ -1,4 +1,8 @@
+
+<app-firstsection></app-firstsection>
 <div class="outer-container">
+<app-skills></app-skills>
+
     <div class="row">
     <div class="left-section col-md-4">
         <h3 class="mx-auto text-center text-capitalize mt-2 text-light">
@@ -8,7 +12,7 @@
           <div class="img-container">
             <div class="img-wrapper">
               <img
-                src="assets/img/college.jpg"
+                src="{{eduImgEnlarged}}"
                 class="img-fluid img-responsive rounded-circle"
                 alt="character"
               />
@@ -18,6 +22,34 @@
             <q><i>from darkness to light</i></q>
           </h5>
     </div>
-    <div class="right-section col-md-8"></div>
+    <div class="right-section col-md-8 d-md-flex justify-content-center align-items-center">
+
+ <div class="row row-cols-3 mx-auto w-100">
+  <div *ngFor="let e of edu" (click)="eduImgEnlarger(e)" class="col mx-auto mt-4 col-outer-card">
+    <div class="card">
+      <div class="card-ele">
+        <i class="{{e.icons}}"></i>
+      </div>
+      <div class="card-el">
+        <div class="">
+          <h5>{{e.year}}</h5>
+         </div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">
+          
+          <h4>{{e.standard}}</h4>
+         </div>
+       <div class="card-text">
+<p>{{e.institution}}</p>
+<p>{{e.course}}</p>
+<p>{{e.marks}}</p>
+       </div>
+      </div>
+    </div>
+  </div>
+ </div>
+    </div>
 </div>
+<app-projects></app-projects>
 </div>
