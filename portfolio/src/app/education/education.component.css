@@ -91,3 +91,16 @@ border-radius: 10px;
 
 
 }
+@media only screen and (max-width:600px){
+   .outer-container  .left-section{
+        min-height:70vh;
+        height:70vh;
+    }
+    .outer-container .left-section .img-container{
+        height:300px;
+        width:300px;
+    }
+    .outer-container .right-section .card{
+        margin-top:180px;
+    }
+}

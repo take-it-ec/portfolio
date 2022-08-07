@@ -30,7 +30,15 @@ export class ProjectsComponent implements OnInit {
       projectDes:'my third project',
       projectLink:'',
 
-    }
+    },
+    {
+      projectTitle:'Project 3',
+      projectImg:'assets/img/college.jpg',
+      projectDes:'my third project',
+      projectLink:'',
+
+    },
+  
   ]
   constructor() { }
 

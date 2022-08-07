@@ -31,7 +31,7 @@ sk:Skill[]=[
   },
   {
     skillTitle:'Bootstrap',
-    skillImg:'assets/img/bootstrap.jpeg',
+    skillImg:'assets/img/bootstrap.jpg',
     skillProficiency:'Advanced',
 
   },

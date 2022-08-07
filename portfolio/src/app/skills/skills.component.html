@@ -1,13 +1,13 @@
 <div class="outer-container">
     <div class="skill-container d-flex ">
-       <div class="row ">
+       <div class="row skill-wrapper">
         <div class="col-md-8 left-section d-flex p-5 justify-content-center align-items-center ">
 
-            <div class="row mx-auto row-cols-3 ">
+            <div class="row mx-auto row-cols-1 row-cols-md-3 ">
                 <div class="col mx-auto"*ngFor="let s of sk; let i = index" (click)="imgEnlarger(s)">
                     <div class="card mb-3 mx-auto" style="max-width: 540px;">
                         <div class="row g-0">
-                          <div class="col-md-4 d-flex justify-content-center align-items-center">
+                          <div class="col-md-4 d-flex justify-content-center align-items-center left-img-wrapper">
                             <img src="{{s.skillImg}}" class="img-fluid rounded-start my-auto mx-auto d-block" alt="...">
                           </div>
                           <div class="col-md-8">

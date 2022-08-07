@@ -28,7 +28,7 @@ edu:Educational[]=[
   marks:'93',
   icons:'fa-solid fa-school',
   year:'2018',
-  img:'assets/img/school.jpeg'
+  img:'assets/img/school.jpg'
 
 
 
@@ -40,7 +40,7 @@ edu:Educational[]=[
   marks:'95',
   icons:'fa-solid fa-school',
   year:'2016',
-  img:'assets/img/school2.jpeg'
+  img:'assets/img/school.jpg'
 
 
 

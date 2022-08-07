@@ -1,0 +1,24 @@
+.outer-container{
+height:30vh;
+/* width:100%; */
+background-color:var(--primClr);
+
+}
+.footer-wrapper{
+    height: 30vh;
+    background-color:var(--primClr);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.footer-wrapper .social-media-icons{
+    display:flex;
+    justify-content:space-around;
+    font-size:30px;
+    color:#FFF;
+    width:70%;
+    margin:0 auto;
+    
+}

@@ -1,21 +1,19 @@
 <div class="outer-container">
    <div class="project-container p-5">
     <h3 class="mx-auto text-center">Projects</h3>
-    <div class="row row-cols-3 mt-4 mx-auto">
-        <div class="col"  *ngFor="let p of pro">
-            <div class="card">
+    <div class="row mx-auto row-cols-1 row-cols-md-4 mt-4">
+        <div class="col mt-5 d-flex" *ngFor="let p of pro">
                     <figure class="imghvr-push-up mx-auto">
                         <img src="{{p.projectImg}}" alt="example-image">
-                        <figcaption>
+                        <figcaption class="mx-auto">
                           <h3 class="ih-fade-down ih-delay-sm ">{{p.projectTitle}}</h3>
                           <p class="ih-zoom-in ih-delay-md">
                             <i>{{p.projectDes}}</i>
                           </p>
                           <a class="ih-fade-up ih-delay-lg button mx-auto text-center" href="{{p.projectLink}}"><i class="fa-brands fa fa-github-square" aria-hidden="true"></i></a>
                         </figcaption>
-                        <a href="#"></a>
+                        <!-- <a href=""></a> -->
                       </figure>
-            </div>
         </div>
             </div>
    </div>
