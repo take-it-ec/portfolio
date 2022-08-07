@@ -10,10 +10,11 @@
 
 html,body{
     scroll-behavior:smooth;
+    overflow-x: hidden;
 }
 
 body{
-    width:100%;
+    /* width:; */
     height:100%;
     overflow-x:hidden;
 }
